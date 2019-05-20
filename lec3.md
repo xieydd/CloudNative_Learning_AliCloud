@@ -88,3 +88,8 @@ spec:
 ```
 
 ![image-20190519230741545](./images/image-20190519230741545.png)
+
+安装完 minikube 后，需要设置
+```
+export NO_PROXY=$no_proxy,$(minikube ip)
+```
