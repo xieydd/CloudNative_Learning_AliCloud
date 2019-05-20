@@ -87,4 +87,4 @@ spec:
     - containerPort: 8080
 ```
 
-![image-20190519230741545](../images/image-20190519230741545.png)
+![image-20190519230741545](./images/image-20190519230741545.png)
