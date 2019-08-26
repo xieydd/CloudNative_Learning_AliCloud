@@ -1,3 +1,22 @@
+* [Lec10:  应用存储和持久化数据卷：存储快照和拓扑调度](#lec10--应用存储和持久化数据卷存储快照和拓扑调度)
+   * [1. 存储快照](#1-存储快照)
+      * [1. 产生背景](#1-产生背景)
+      * [2. 用法](#2-用法)
+      * [在 pvc 中指定 .Spec.dataSource 字段指定 VolumeSnapshot 对象，生成 pv 对应的存储数据是从 VolumeSnapshot 关联的 VolumeSnapshotContent 中 restore 出来的](#在-pvc-中指定-specdatasource-字段指定-volumesnapshot-对象生成-pv-对应的存储数据是从-volumesnapshot-关联的-volumesnapshotcontent-中-restore-出来的)
+   * [2. 拓扑调度](#2-拓扑调度)
+      * [1. Topology 拓扑在 k8s 中的意思？](#1-topology-拓扑在-k8s-中的意思)
+      * [2. 拓扑调度的产生背景](#2-拓扑调度的产生背景)
+      * [3. 存储调度的本质](#3-存储调度的本质)
+   * [3. 样例](#3-样例)
+      * [1. volume snapshot 使用](#1-volume-snapshot-使用)
+      * [2. Local PV 拓扑示例](#2-local-pv-拓扑示例)
+      * [3. 限制 dynamic provisioning pv 拓扑示例](#3-限制-dynamic-provisioning-pv-拓扑示例)
+   * [4. 具体分析](#4-具体分析)
+      * [1. k8s volume snapshot 具体处理流程](#1-k8s-volume-snapshot-具体处理流程)
+      * [2. Volume Topology-aware 调度流程](#2-volume-topology-aware-调度流程)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ### Lec10:  应用存储和持久化数据卷：存储快照和拓扑调度
 
 #### 1. 存储快照 

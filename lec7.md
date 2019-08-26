@@ -1,3 +1,18 @@
+* [Lec7: 应用编排与管理-Job 和 Daemonset](#lec7-应用编排与管理-job-和-daemonset)
+   * [1. Job](#1-job)
+      * [1. 为什么需要 Job?](#1-为什么需要-job)
+      * [2. Job Controller 可以做什么？](#2-job-controller-可以做什么)
+      * [3. Job 参数](#3-job-参数)
+   * [4. Job 中的定时任务 CronJob](#4-job-中的定时任务-cronjob)
+      * [5. 控制器](#5-控制器)
+   * [2. DaemonSet](#2-daemonset)
+      * [1. 需求：](#1-需求)
+      * [2. 场景：](#2-场景)
+      * [3. 更新策略](#3-更新策略)
+      * [4. 控制器](#4-控制器)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
+
 ### Lec7: 应用编排与管理-Job 和 Daemonset
 
 #### 1. Job
