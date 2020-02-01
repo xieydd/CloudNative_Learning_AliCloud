@@ -1,7 +1,7 @@
 * [Lec6: 应用编排与管理-Deployment](#lec6-应用编排与管理-deployment)
-      * [1. Backup](#1-backup)
-      * [2. Deployment 用例](#2-deployment-用例)
-      * [3. Deployment 管理模式](#3-deployment-管理模式)
+    * [1. Backup](#1-backup)
+    * [2. Deployment 用例](#2-deployment-用例)
+    * [3. Deployment 管理模式](#3-deployment-管理模式)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
